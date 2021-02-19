@@ -1,0 +1,51 @@
+.skills {
+  place-content: center;
+  p,
+  h2 {
+    grid-column: 2/12;
+  }
+  &-technologies {
+    margin: 3rem 0;
+    grid-column: 2/12;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   
+    & .skill-container {
+        margin: 2rem;
+      
+    }
+  }
+}
+
+@media screen and (max-width: 315px) 
+{
+
+  .skills {
+  
+    
+    &-technologies {
+     
+      grid-column: 1/13;
+     
+     
+      & .skill-container {
+          margin: 1rem;
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) 
+{
+
+  .skills {
+  
+
+      & .skill-container {
+          margin: 1rem;
+        
+      }
+    }
+  
+}

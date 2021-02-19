@@ -1,0 +1,81 @@
+.fu-progress {
+    position: relative;
+    width: 12rem;
+    height: 12rem;
+    //15rem 
+    // border: 5px solid rgb(23, 139, 202);
+    border-radius: 50% !important;
+
+    .fu-inner {
+      position: absolute;
+      overflow: hidden;
+
+      z-index: 2;
+
+      width: 11rem;
+      height: 11rem;
+      //14rem
+      border: 3px solid #ffffff;
+      //5px
+      border-radius: 50% !important;
+      display: flex;
+      .fu-logo-container{
+          padding: 1rem;
+          align-self: center;
+          & img{
+              width: 100%;
+          }
+      }
+
+      .water {
+        position: absolute;
+        z-index: 1;
+        // background: rgba(23, 202, 127, 0.555);
+        width: 200%;
+        height: 200%;
+
+        transform: translateZ(0);
+        -webkit-transform: translateZ(0);
+
+        transition: all 1s ease !important;
+        -webkit-transition: all 1s ease !important;
+
+        top: 60%;
+        left: -50%;
+        border: 1px solid transparent;
+        border-radius: 40% !important;
+
+        animation-duration: 10s;
+        animation-name: spin;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+
+      .glare {
+        position: absolute;
+        top: -120%;
+        left: -120%;
+        z-index: 5;
+        width: 200%;
+        height: 200%;
+        transform: rotate(45deg);
+        background: #ffffff;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50%;
+      }
+
+      .fu-percent {
+        position: absolute;
+        align-self: center;
+        top: 8rem;
+        width: 100%;
+        height: 100%;
+
+        font-size: 1.5rem;
+        //2rem
+        font-weight: bold;
+        color: rgba(7, 48, 70, 0.459);
+        text-align: center;
+      }
+    }
+  }

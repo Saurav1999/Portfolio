@@ -1,0 +1,62 @@
+// .projects {
+//   margin: 20rem 0;
+ 
+//   width: 100%;
+//   place-items: center;
+//   & .slide-container{
+//     grid-column: 1/13;
+  
+//   }
+// }
+.projects {
+ 
+ 
+ 
+  place-content: center;
+  .primary-heading,h2{
+    justify-self: end;
+    grid-column: 2/12;
+  }
+  p{
+    
+    grid-column: 2/12;
+  }
+  
+  .slide-container{
+
+    grid-column: 1/13;
+    margin: 3rem auto;
+    width: 99vw;
+    & .project-container-outer{
+      margin: 0 auto;
+      width: 100%;
+      & .project-container{
+        margin: 0 auto;
+        width: 100%;
+        
+        & .project-img{
+          margin: 0 auto;
+          width: 100%;
+        }
+      }
+    }
+   
+  }
+ 
+}
+@media screen and (max-width: 315px) 
+{
+  .projects {
+
+    .slide-container{
+  
+      
+      margin: 3rem 0;
+      width: 100%;
+
+     
+    }
+   
+  }
+
+}

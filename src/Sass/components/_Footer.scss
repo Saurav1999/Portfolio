@@ -1,0 +1,36 @@
+.footer{
+    background-color: #1b1b25;
+    min-height: 20rem;
+    & .footer-logo{
+        color: $color-ternary;
+        font-family: "Permanent Marker", cursive;
+        font-size: 10rem;
+        grid-column: 2/12;
+        & p{
+            color: $color-ternary;
+            font-size:2.5rem;
+        }
+    }
+    & .social-links{
+        grid-column: 2/12;
+        display: flex;
+        justify-content: space-around;
+        & .social-icon{
+            font-size: 3.5rem;
+            margin: 2.5rem 0;
+            & i{
+                color: #fff;
+            }
+            
+            
+        }
+    }
+    & .copyright{
+        grid-column: 2/12;
+        color: #767680;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+}
