@@ -39,7 +39,7 @@ $animDuration: 5s;
   background-repeat: no-repeat;
   background-position:top right;
   background-size: 70% 12rem; 
-  grid-template-rows: min-content minmax(8rem,20rem) 1fr 30rem ;
+  grid-template-rows: min-content minmax(8rem,10rem) 1fr 10rem ;
   // background-position-x: 10rem;
 
   // align-content: start;
@@ -60,7 +60,7 @@ $animDuration: 5s;
     grid-column: 1/13;
     grid-row: 3/4;
     // grid-template-rows: repeat(4, min-content) max-content;
-    grid-template-rows:  repeat(3, max-content) ;
+    grid-template-rows:  repeat(4, max-content) minmax(5rem,max-content) minmax(5rem,10rem);
     align-items: center;
     // margin:auto 0;
     //  align-content: center;
