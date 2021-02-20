@@ -65,12 +65,13 @@ function Hero() {
             </a>
           </div>
         </div>
+        <div class="scroll-indicator"><div class="scroll-indicator__icon"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-down"></i></div>Scroll down</div>
       </div>
       {/* <div className="scroll-down">
           <div className="mouse"></div>
           <p className="scroll-text">Scroll</p>
         </div> */}
-      <div class="scroll-indicator"><div class="scroll-indicator__icon"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-down"></i></div>Scroll down</div>
+     
 
       {/* <div className="scroll-down-container">
         <a href="#about" className="scroll-down">
