@@ -1,12 +1,15 @@
 .header {
-  min-height: 15rem;
-  height: 30vh;
+  // min-height: 10rem;
+  // height: 30vh;
   // z-index: -1;
   // position: relative;
   grid-column: 1/13;
-  position: absolute;
-  top: 0;
-  right: 0;
+  // align-self: start;
+  // position: absolute;
+  // top: 0;
+  // right: 0;
+  grid-template-rows: max-content;
+  height: min-content;
   width: 100%;
 
   & .header-background {

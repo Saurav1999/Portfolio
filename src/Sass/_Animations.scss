@@ -195,3 +195,61 @@
     color: $colorOutline;
   }
 }
+
+@keyframes  arrowTransition1{
+  0%{
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  // 20%{
+  //   transform: translateY(0rem);
+  // }
+  20%{
+    opacity: .5;
+    transform: translateY(0rem);
+
+  }
+  
+  35%{
+    opacity: 1;
+    transform: translateY(0rem);
+
+  }
+  90%{
+    opacity: .5;
+    transform: translateY(.7rem);
+  }
+100%{
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  
+}
+@keyframes  arrowTransition2{
+  0%{
+    transform: translateY(-.3rem);
+    opacity: 0;
+  }
+  15%{
+    transform: translateY(0rem);
+    opacity: .5;
+  }
+  40%{
+    transform: translateY(0rem);
+    opacity: 1;
+
+  }
+  60%{
+    opacity: .7;
+    transform: translateY(0rem);
+  }
+  90%{
+    transform: translateY(1rem);
+    opacity: .3;
+  }
+100%{
+    transform: translateY(2rem);
+    opacity: 0;
+  }
+  
+}

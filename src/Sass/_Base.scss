@@ -1,6 +1,6 @@
-:root{
-  --swiper-navigation-color:#503291;
-  --swiper-pagination-color:#503291;
+:root {
+  --swiper-navigation-color: #503291;
+  --swiper-pagination-color: #503291;
 }
 *,
 *::after,
@@ -26,7 +26,6 @@ body {
   font-family: "Lato", sans-serif;
   min-width: 250px;
   min-height: 400px;
-  
 }
 
 h1,
@@ -38,11 +37,11 @@ h1 {
   font-size: 6rem;
 }
 h2 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 p {
   color: $color-text-grey;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .primary-heading {
   color: $color-ternary;
@@ -53,11 +52,7 @@ a,
 a:link,
 a:active {
   text-decoration: none;
-  color: #503291;
-  
-  
-  
- 
+
   cursor: pointer;
 }
 button {
@@ -69,7 +64,7 @@ button {
   grid-template-columns: repeat(12, 1fr);
   gap: 10px;
 }
-.skills{
+.skills {
   margin: 2rem 0;
 }
 
@@ -77,32 +72,27 @@ button {
 @media screen and (max-width: 315px) {
   html {
     font-size: 40%;
-    
   }
   .grid {
-    
-   
     gap: 5px;
   }
 }
 @media screen and (max-width: 460px) {
   html {
     font-size: 50%;
-    
   }
   .grid {
-    
-   
     gap: 5px;
   }
 }
 @media screen and (max-width: 768px) {
-  body{
-    &::-webkit-scrollbar { width: 0 !important }
-    overflow: -moz-scrollbars-none; 
-    -ms-overflow-style: none; 
+  body {
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
   }
-  
 }
 @media screen and (max-width: 1028px) {
 }
