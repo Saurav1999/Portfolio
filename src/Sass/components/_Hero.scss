@@ -87,10 +87,10 @@ $animDuration: 5s;
       justify-content: space-between;
       display: flex;
       font-size: 3.5rem;
-
+      color: $color-primary;
       & .social-icon {
         cursor: pointer;
-        color: $color-primary;
+        
 
         &:nth-child(1) {
           animation: breathe 2s infinite 0s linear;
@@ -124,10 +124,10 @@ $animDuration: 5s;
     }
   }
   & .scroll-down {
-   
-    // bottom: 1rem;
+   position: absolute;
+    bottom: 1rem;
     // margin-left: 1rem;
-    grid-column: 2/12;
+ 
     justify-self: center;
     display: flex;
     flex-direction: column;
@@ -201,6 +201,10 @@ $animDuration: 5s;
       & .social-links {
         margin: 2.5rem 0;
       }
+     
+    }
+    & .scroll-down{
+      bottom: 5rem;
     }
   }
 }
