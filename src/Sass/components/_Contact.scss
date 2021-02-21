@@ -1,6 +1,7 @@
 .contact {
   margin: 10rem 0;
   place-content: center;
+  margin-top: 25rem;
   //   grid-column: 1/13;
   .contact-content {
     grid-column: 1/13;
@@ -50,7 +51,8 @@
           input:valid + .input-group__placeholder,
           textarea:focus + .input-group__placeholder,
           textarea:valid + .input-group__placeholder {
-            transform: translate(0.2rem, -5rem);
+            transform: translate(0.2rem, -3.5rem);
+            font-size: 1.8rem;
           }
           & .bottom-line {
             opacity: 0;
@@ -91,11 +93,11 @@
             resize: none;
           }
           &__placeholder {
-            font-size: 1.8rem;
+            font-size: 2rem;
             position: absolute;
-            top: 2.5rem;
-            transform: translate(1rem, -50%);
-            transition: transform ease 0.3s;
+            top: 1rem;
+            transform: translate(1.5rem, 1rem);
+            transition: all ease 0.3s;
             color: $color-ternary;
           }
         }

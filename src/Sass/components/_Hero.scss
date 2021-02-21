@@ -30,21 +30,99 @@ $animDuration: 5s;
 
 .hero {
   //  min-height: 60vh;
-  min-height: 500px;
+  min-height: 100vh;
   width: 100%;
-  height: 100vh;
+  // height: 100vh;
   // overflow: hidden;
   position: relative;
   background: url(../../assets/header_background_sm.svg);
   background-repeat: no-repeat;
-  background-position:top right;
-  background-size: 70% 12rem; 
-  grid-template-rows: min-content minmax(8rem,10rem) 1fr 10rem ;
+  background-position: top right;
+  background-size: 70% 12rem;
+  grid-template-rows: min-content minmax(1rem, 5rem) 1fr 7rem;
   // background-position-x: 10rem;
 
   // align-content: start;
   //  overflow: hidden;
   //  margin-top: 30rem;
+  & .header {
+    // min-height: 10rem;
+    // height: 30vh;
+    // z-index: -1;
+    // position: relative;
+    grid-column: 1/13;
+    // align-self: start;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    grid-template-rows: max-content;
+    height: min-content;
+    width: 100%;
+
+    & .header-background {
+      grid-column: 4/13;
+      margin-left: 2rem;
+      width: 100%;
+      height: 100%;
+      grid-row: 1/1;
+      & img {
+        // height: 100%;
+        min-height: 130px;
+        max-height: 150px;
+
+        width: 100%;
+      }
+    }
+    & .home__logo {
+      grid-column: 2/3;
+    }
+    & nav {
+      grid-column: 5/13;
+      grid-row: 1/1;
+      height: 8rem;
+
+      display: flex;
+      justify-content: flex-end;
+
+      & .home_nav {
+        margin-top: 2rem;
+        //    margin-left: .8rem;
+        display: flex;
+        align-items: center;
+
+        & a {
+          transition: color 0.1s linear;
+          color: $color-ternary;
+          font-weight: 600;
+        }
+        & a:not(:last-child) {
+          margin-right: 2rem;
+        }
+        & a:hover {
+          color: #fff;
+        }
+
+        & button {
+          width: auto;
+          border: none;
+          border-radius: 4px;
+          background-color: $color-ternary;
+          padding-top: 5px;
+          animation: breathe 2s infinite 0s linear;
+          margin-right: 20px;
+          transition: background-color 0.2s linear;
+          & .icon {
+            //   height: 35px;
+            width: 35px;
+          }
+        }
+        & button:hover {
+          background-color: $color-ternary-hover;
+        }
+      }
+    }
+  }
+  
 
   & .hero-content {
     // position: relative;
@@ -60,7 +138,10 @@ $animDuration: 5s;
     grid-column: 1/13;
     grid-row: 3/4;
     // grid-template-rows: repeat(4, min-content) max-content;
-    grid-template-rows:  repeat(4, max-content) minmax(5rem,max-content) minmax(5rem,10rem);
+    grid-template-rows: repeat(4, max-content) minmax(2rem, max-content) minmax(
+        2rem,
+        6rem
+      );
     align-items: center;
     // margin:auto 0;
     //  align-content: center;
@@ -92,7 +173,8 @@ $animDuration: 5s;
       // width: ;
       grid-column: 5/9;
       // width: ;
-      margin: 2rem 0;
+      // margin: 2rem 0;
+      // margin-top: 2rem;
       justify-content: space-between;
       display: flex;
       font-size: 3rem;
@@ -162,19 +244,19 @@ $animDuration: 5s;
         // height: 1.25rem;
         // width: 1.25rem;
         // margin-top: .125rem;
-  
+
         display: flex;
         flex-direction: column;
         & i {
           &::after {
             content: "";
           }
-          &:nth-child(1){
+          &:nth-child(1) {
             animation: arrowTransition1 2s ease-in infinite;
           }
           &:nth-child(2) {
             margin-top: -5px;
-            animation: arrowTransition2 2s ease-in   infinite;
+            animation: arrowTransition2 2s ease-in infinite;
           }
         }
       }
@@ -265,3 +347,63 @@ $animDuration: 5s;
 //     }
 //   }
 // }
+
+
+//header media queries
+@media screen and (max-width: 315px) {
+  .header {
+    & nav {
+      & .home_nav {
+        // & button {
+        //     display: none;
+        // }
+      }
+    }
+  }
+}
+@media screen and (max-width: 560px) {
+  .header {
+    & nav {
+      & .home_nav {
+        // & a:nth-child(1) {
+        //   display: none;
+        // }
+        & .about-link{
+          display: none;
+        }
+
+        
+      }
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .header {
+    & nav {
+      & .home_nav {
+        & a:nth-child(4) {
+          display: none;
+        }
+
+        // & button {
+        //     display: none;
+        // }
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {
+  .header {
+    & nav {
+      & .home_nav {
+        & button {
+          display: none;
+        }
+
+        // & button {
+        //     display: none;
+        // }
+      }
+    }
+  }
+}

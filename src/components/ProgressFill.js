@@ -6,15 +6,15 @@ function ProgressFill({percentage,background,border,children}) {
  
     const waterlevel = useRef();
     const containerBorder = useRef();
-    console.log(children)
+
     useEffect(() => {
       const perc = 100 - percentage;
 
       containerBorder.current.style.border = `.5rem solid ${border}`
       waterlevel.current.style.top = `${perc}%`
-      console.log(background)
+
      waterlevel.current.style.background = background;
-    //    = background;
+
     }, [percentage,background,border])
   return (
     
@@ -26,7 +26,7 @@ function ProgressFill({percentage,background,border,children}) {
           <div className="fu-percent percent">
             <span>{percentage}</span>%
           </div>
-          <div ref={waterlevel} class="water"></div>
+          <div ref={waterlevel} className="water"></div>
           <div className="glare"></div>
         </div>
       </div>

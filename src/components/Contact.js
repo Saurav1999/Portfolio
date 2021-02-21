@@ -110,13 +110,13 @@ function Contact() {
 
     if(name.value==="" || email.value==="" || subject.value==="" || message.value==="" ) {
       // notificationRef.addNotification({ text: 'Some info', isInfo: true });
-      playNotification();
+      // playNotification();
       NotificationManager.error('Please fill all the required details.',"Couldn't send your message",2500);
       setSending(false);
       return
     }
     if(email.error ){
-      playNotification();
+      // playNotification();
       NotificationManager.error('Please enter a valid E-mail Id.',"Couldn't send your message",2500);
       setSending(false);
       return
@@ -149,7 +149,7 @@ function Contact() {
           "There has been an error.  Here some thoughts on the error that occured:",
           err
         )
-        playNotification();
+        // playNotification();
         NotificationManager.error('Something went wrong. Please connect through other medium',"Couldn't send your message",2500);
       
     })
@@ -162,8 +162,8 @@ function Contact() {
         <h2>Get In Touch</h2>
         <div className="form-container">
         <NotificationContainer/>
-          <form class="contact__form" autoComplete="off">
-            <div class="input-group">
+          <form className="contact__form" autoComplete="off">
+            <div className="input-group">
               <input
                 required
                 type="text"
@@ -175,13 +175,13 @@ function Contact() {
                 }}
                 onBlur={formValidation}
               />
-              <label htmlFor="name" class="input-group__placeholder">
+              <label htmlFor="name" className="input-group__placeholder">
                 Name*
               </label>
               <div className="bottom-line"></div>
               <div className="error">*This is a required field</div>
             </div>
-            <div class="input-group">
+            <div className="input-group">
               <input
                 required
                 type="text"
@@ -193,13 +193,13 @@ function Contact() {
                 }}
                 onBlur={formValidation}
               />
-              <label htmlFor="email" class="input-group__placeholder">
+              <label htmlFor="email" className="input-group__placeholder">
                 Email*
               </label>
               <div className="bottom-line"></div>
               <div className="error">*This is a required field</div>
             </div>
-            <div class="input-group">
+            <div className="input-group">
               <input
                 required
                 type="text"
@@ -211,14 +211,14 @@ function Contact() {
                 }}
                 onBlur={formValidation}
               />
-              <label htmlFor="subject" class="input-group__placeholder">
+              <label htmlFor="subject" className="input-group__placeholder">
                 Subject*
               </label>
 
               <div className="bottom-line"></div>
               <div className="error">*This is a required field</div>
             </div>
-            <div class="input-group">
+            <div className="input-group">
               <textarea
                 required
                 name="Message"
@@ -230,14 +230,14 @@ function Contact() {
                 }}
                 onBlur={formValidation}
               ></textarea>
-              <label htmlFor="subject" class="input-group__placeholder">
+              <label htmlFor="subject" className="input-group__placeholder">
                 Message*
               </label>
               <div className="bottom-line"></div>
               <div className="error">*This is a required field</div>
             </div>
 
-            {/* <button class="button" type="submit">
+            {/* <button className="button" type="submit">
               Send
             </button> */}
 

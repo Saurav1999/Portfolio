@@ -20,23 +20,23 @@ function About() {
           <ul className="recent-tech-left">
             <li>
               <span>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
               Javascript(ES6+)
             </li>
 
             <li>
               <span>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
               Node JS
             </li>
             <li>
               <span>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
               Express JS
             </li>
@@ -44,22 +44,22 @@ function About() {
           <ul className="recent-tech-right">
             <li>
               <span>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
               Html and S(CSS)
             </li>
             <li>
               <span>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
               React JS
             </li>
             <li>
               <span>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
-                <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
+                <i className="fa fa-chevron-right" aria-hidden="true"></i>
               </span>
               Material UI
             </li>

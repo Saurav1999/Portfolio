@@ -11,17 +11,17 @@ function Footer() {
       <div className="social-links">
         <div className="social-icon">
           <a href="https://github.com/Saurav1999">
-            <i class="fab fa-github-square"></i>
+            <i className="fab fa-github-square"></i>
           </a>
         </div>
         <div className="social-icon">
           <a href="https://www.facebook.com/profile.php?id=100002599733133">
-            <i class="fab fa-facebook-square"></i>
+            <i className="fab fa-facebook-square"></i>
           </a>
         </div>
         <div className="social-icon">
           <a href="https://www.linkedin.com/in/saurav-singh-a0793118b/">
-            <i class="fab fa-linkedin"></i>
+            <i className="fab fa-linkedin"></i>
           </a>
         </div>
       </div>

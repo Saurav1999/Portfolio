@@ -25,9 +25,10 @@ function Hero() {
       </div> */}
         <nav>
           <div className="home_nav">
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact Me</a>
+            <a href="#about" className="about-link">About</a>
+            <a href="#skills" className="skills-link">Skills</a>
+            <a href="#projects" className="projects-link">Projects</a>
+            <a href="#contact" className="contact-link">Contact Me</a>
 
             <button>
               <a href="https://drive.google.com/file/d/1yZASuaytfxZlOVV4OPaSWqXemqhAY0zO/view?usp=sharing">
@@ -51,31 +52,36 @@ function Hero() {
         <div className="social-links">
           <div className="social-icon">
             <a href="https://github.com/Saurav1999">
-              <i class="fab fa-github-square"></i>
+              <i className="fab fa-github-square"></i>
             </a>
           </div>
           <div className="social-icon">
             <a href="https://www.facebook.com/profile.php?id=100002599733133">
-              <i class="fab fa-facebook-square"></i>
+              <i className="fab fa-facebook-square"></i>
             </a>
           </div>
           <div className="social-icon">
             <a href="https://www.linkedin.com/in/saurav-singh-a0793118b/">
-              <i class="fab fa-linkedin"></i>
+              <i className="fab fa-linkedin"></i>
             </a>
           </div>
         </div>
-        <div class="scroll-indicator"><div class="scroll-indicator__icon"><i class="fa fa-chevron-down"></i><i class="fa fa-chevron-down"></i></div>Scroll down</div>
+        <div className="scroll-indicator">
+          <div className="scroll-indicator__icon">
+            <i className="fa fa-chevron-down"></i>
+            <i className="fa fa-chevron-down"></i>
+          </div>
+          Scroll down
+        </div>
       </div>
       {/* <div className="scroll-down">
           <div className="mouse"></div>
           <p className="scroll-text">Scroll</p>
         </div> */}
-     
 
       {/* <div className="scroll-down-container">
         <a href="#about" className="scroll-down">
-          <i class="fa fa-chevron-down"></i>
+          <i className="fa fa-chevron-down"></i>
         </a>
       </div> */}
     </div>

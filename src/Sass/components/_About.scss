@@ -1,6 +1,7 @@
 .about {
-  margin-top: 20rem;
-  margin-bottom: 20rem;
+  margin-top: 25rem;
+  // margin-bottom: 20rem;
+
   .about-content {
     grid-column: 1/13;
     // justify-items: start;
@@ -100,7 +101,7 @@
     .about-content {
       grid-column: 1/13;
       
-      justify-items: end;
+      // justify-items: end;
     
  
       & .techs{
