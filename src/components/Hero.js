@@ -1,6 +1,7 @@
 import React from "react";
 // import Header from "./Header";
 import resume from "../assets/resume.png";
+import projectLogo from "../assets/projects.svg";
 // import header_background_sm from "../assets/header_background_sm.svg";
 
 function Hero() {
@@ -25,10 +26,18 @@ function Hero() {
       </div> */}
         <nav>
           <div className="home_nav">
-            <a href="#about" className="about-link">About</a>
-            <a href="#skills" className="skills-link">Skills</a>
-            <a href="#projects" className="projects-link">Projects</a>
-            <a href="#contact" className="contact-link">Contact Me</a>
+            <a href="#about" className="about-link">
+              About
+            </a>
+            <a href="#skills" className="skills-link">
+              Skills
+            </a>
+            <a href="#projects" className="projects-link">
+              Projects
+            </a>
+            <a href="#contact" className="contact-link">
+              Contact Me
+            </a>
 
             <button>
               <a href="https://drive.google.com/file/d/1yZASuaytfxZlOVV4OPaSWqXemqhAY0zO/view?usp=sharing">
@@ -49,6 +58,14 @@ function Hero() {
           I specialize in developing, designing and deploying elegant responsive
           websites and web applications.
         </p>
+      
+          <button className="btn-yellow">
+            <div className="img-container">
+              <img className="icon" src={projectLogo} alt="cv icon"></img>
+            </div>
+            <div className="text-container">See My Work</div>
+          </button>
+      
         <div className="social-links">
           <div className="social-icon">
             <a href="https://github.com/Saurav1999">
@@ -74,10 +91,10 @@ function Hero() {
           Scroll down
         </div>
       </div>
-      {/* <div className="scroll-down">
+      <div className="scroll-down">
           <div className="mouse"></div>
           <p className="scroll-text">Scroll</p>
-        </div> */}
+        </div>
 
       {/* <div className="scroll-down-container">
         <a href="#about" className="scroll-down">

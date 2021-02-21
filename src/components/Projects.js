@@ -35,22 +35,22 @@ function Projects() {
           {/* {data.map((item) => (
               <img src="https://picsum.photos/200/300" key={item} alt="swipe" />
             ))} */}
-          <div className="project-container-outer" style={{width:"90%",height:"auto"}}>
+          <div className="project-container-outer">
             <div className="project-container">
               <img className="project-img" src={proj1}  alt="Project1"/>
             </div>
           </div>
-          <div className="project-container-outer" style={{width:"90%",height:"auto"}}>
+          <div className="project-container-outer" >
             <div className="project-container">
               <img className="project-img" src={proj2}  alt="Project2"/>
             </div>
           </div>
-          <div className="project-container-outer" style={{width:"90%",height:"auto"}}>
+          <div className="project-container-outer" >
             <div className="project-container">
               <img className="project-img" src={proj3} alt="Project3" />
             </div>
           </div>
-          <div className="project-container-outer" style={{width:"90%",height:"auto"}}>
+          <div className="project-container-outer">
             <div className="project-container">
               <img className="project-img" src={proj4} alt="Project4"/>
             </div>

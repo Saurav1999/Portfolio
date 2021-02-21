@@ -97,5 +97,12 @@ button {
 }
 @media screen and (max-width: 1028px) {
 }
-@media screen and (max-width: 1258px) {
+@media screen and (min-width: 1258px) {
+  html {
+    font-size: 65%;
+  }
+  .grid {
+    gap: 5px;
+  }
 }
+

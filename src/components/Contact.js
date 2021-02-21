@@ -5,6 +5,7 @@ import Loader from "react-loader-spinner";
 import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 import notificationsound from '../assets/notification.mp3';
+import sendIcon from "../assets/send.svg";
 
 init("user_NITjmkLgyLOvo8wvCW52i");
 
@@ -242,17 +243,25 @@ function Contact() {
             </button> */}
 
             <button className="btn-yellow" type="submit" onClick={sendContact}>
+            {/* <div className="loader">
+                  <Loader
+                    type="ThreeDots"
+                    color="#503291"
+                    height={50}
+                    width={50}
+                  />
+                </div> */}
               {sending ? (
                 <div className="loader">
                   <Loader
                     type="ThreeDots"
-                    color="#1b1b25"
+                    color="#503291"
                     height={50}
                     width={50}
                   />
                 </div>
               ) : (
-                "Send"
+                <div className="button-content"><div className="icon-container"><img className="icon" src={sendIcon} alt="cv icon"></img></div>Send</div>
               )}
             </button>
             {/* <Button

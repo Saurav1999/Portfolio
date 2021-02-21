@@ -40,7 +40,10 @@
         }
       }
     }
-   
+   & .project-container-outer{
+     width:90%;
+     height: auto
+   }
   }
  
 }
@@ -54,6 +57,25 @@
       margin: 3rem 0;
       width: 100%;
 
+     
+    }
+   
+  }
+
+}
+@media screen and (min-width: 740px) 
+{
+  .projects {
+
+    .slide-container{
+  
+      
+      
+      & .project-container-outer{
+        width:65%;
+        max-width: 720px;
+        height: auto
+      }
      
     }
    

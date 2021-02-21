@@ -103,12 +103,13 @@
         }
         & .btn-yellow {
           // background: none;
-          width: 50%;
-          max-width: 20rem;
+          width: 15rem;
+          
+          height: 5.5rem;
           outline: none;
           border: none;
-          padding: 0rem 2.5rem;
-          height: 4.5rem;
+          padding: .5rem 3rem;
+       
           
           display: flex;
           align-items: center;
@@ -116,6 +117,7 @@
           font-weight: 600;
           font-size: 1.4rem;
           transition: background-color .2s linear;
+       
           &:hover{
             background-color:$color-secondary-hover;
           }
@@ -126,6 +128,27 @@
             justify-content: center;
             align-items: center;
           }
+          & .button-content{
+            display: flex;
+            align-items: center;
+            & .icon-container{
+              background-color: $color-primary;
+              width: 4rem;
+              border-radius: 50%;
+              height: 4rem;
+              padding: .4rem;
+              position: relative;
+              margin-right: 1rem;
+              
+              & img{
+                width: 3.5rem;
+                position: absolute;
+                top: 2px;
+                left: -2px;
+              }
+            }
+          }
+  
         }
      
       }
