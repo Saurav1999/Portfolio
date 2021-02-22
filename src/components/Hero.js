@@ -63,7 +63,7 @@ function Hero() {
             <div className="img-container">
               <img className="icon" src={projectLogo} alt="cv icon"></img>
             </div>
-            <div className="text-container">See My Work</div>
+            <div className="text-container"><a href="#projects">See My Work</a></div>
           </button>
       
         <div className="social-links">
