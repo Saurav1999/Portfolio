@@ -88,7 +88,7 @@ function Hero() {
             <i className="fa fa-chevron-down"></i>
             <i className="fa fa-chevron-down"></i>
           </div>
-          Scroll down
+          <a href="#about">Scroll down</a>
         </div>
       </div>
       <div className="scroll-down">
