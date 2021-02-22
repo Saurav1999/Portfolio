@@ -260,8 +260,11 @@ $animDuration: 5s;
       display: flex;
       justify-content: center;
       align-items: center;
-      animation: colorText $animDuration ease-out infinite,
+     
+        & a{
+          animation: colorText $animDuration ease-out infinite,
         nudgeText $animDuration ease-out infinite;
+        }
       // justify-content: center;
       // align-items: center;
       // font-size:1.5rem;
@@ -273,6 +276,8 @@ $animDuration: 5s;
       & .scroll-indicator__icon {
         margin-right: 6px;
         font-size: 1.2rem;
+        animation: colorText $animDuration ease-out infinite,
+        nudgeText $animDuration ease-out infinite;
         // position: relative;
         // display: block;
         // height: 1.25rem;
