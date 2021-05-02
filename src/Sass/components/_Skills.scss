@@ -13,7 +13,8 @@
     flex-wrap: wrap;
    
     & .skill-container {
-        margin: 2rem;
+        margin: 8px;
+     
       
     }
   }
@@ -31,22 +32,54 @@
      
      
       & .skill-container {
-          margin: 1rem;
+          // margin: 1rem;
         
       }
     }
   }
 }
-@media screen and (max-width: 460px) 
+@media screen and (min-width: 460px) 
 {
 
   .skills {
   
 
       & .skill-container {
-          margin: 1rem;
+          margin: 12px;
         
       }
     }
   
 }
+@media screen and (min-width: 630px) {
+  .skills {
+  
+
+    & .skill-container {
+        margin: 20px;
+      
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .skills {
+  
+
+    & .skill-container {
+        margin: 30px;
+      
+    }
+  }
+}
+// @media screen and (min-width: 1600px) {
+//   .skills {
+  
+
+//     & .skill-container {
+//         margin: 50px;
+      
+//     }
+//   }
+// }
+
+

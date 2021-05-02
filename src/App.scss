@@ -1,3 +1,14 @@
+//font
+@font-face {
+    font-family: 'merck';
+    src: local('merck'), url(./assets/fonts/M_Font/M_Web-Regular.ttf) format('truetype');
+    font-family: 'Akaya Kanadaka';
+    src: local('Akaya Kanadaka'), url(./assets/fonts/AkayaKanadaka-Regular.ttf) format('truetype');
+  }
+
+
+
+//base setup
 @import './Sass/Variables';
 @import './Sass/Base';
 
@@ -11,7 +22,8 @@
 @import './Sass/components/Skills';
 @import './Sass/components/ProgressFill';
 @import './Sass/components/Contact';
-@import './Sass//components/Footer';
+@import './Sass/components/Footer';
+@import './Sass/components/SkillCard';
 
 //Animation
 @import './Sass/Animations';

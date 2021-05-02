@@ -1,0 +1,163 @@
+// .card{
+//     border-radius: .5rem;
+//     box-shadow: rgba(black, 0.25) 0px 2px 5px -1px,
+//               rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+//     width: 150px;
+//     height: 150px;
+//     padding: 12px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+
+//     & img{
+//         width: 100%;
+//         // height: 100px;
+//     }
+// }
+.skill-progress {
+  position: relative;
+//   width: 150px;
+//   height: 150px;
+    height: 110px;
+    width: 90px;
+  box-shadow: rgba(black, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 0.5rem;
+  //15rem
+  // border: 5px solid rgb(23, 139, 202);
+  // border-radius: 50% !important;
+  transition:all .1s ease-in;
+
+  &:hover,&:focus{
+    cursor: pointer;
+    transform: scale(1.1);
+   
+  }
+  &:hover .skill-water{
+    top: -40% !important;
+    
+
+  }
+
+  .skill-inner {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0.5rem;
+
+    z-index: 2;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .skill-logo-container {
+      padding: 1rem;
+      align-self: center;
+      & img {
+        width: 100%;
+      }
+    }
+
+    .skill-water {
+      position: absolute;
+      z-index: 1;
+      // background: rgba(23, 202, 127, 0.555);
+      width: 200%;
+      height: 200%;
+
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+
+      transition: all 1s ease !important;
+      -webkit-transition: all 1s ease !important;
+
+      top: 0%;
+      left: -50%;
+      border: 1px solid transparent;
+      border-radius: 40% !important;
+
+      animation-duration: 10s;
+      animation-name: spin;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .skill-glare {
+      position: absolute;
+      top: -120%;
+      left: -120%;
+      z-index: 5;
+      width: 200%;
+      height: 200%;
+      transform: rotate(45deg);
+      background: #ffffff;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+    }
+
+    .skill-percent {
+      position: absolute;
+      align-self: center;
+      top: 8rem;
+      width: 100%;
+      height: 100%;
+
+      font-size: 1.5rem;
+      //2rem
+      font-weight: bold;
+      color: rgba(7, 48, 70, 0.459);
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 630px) {
+     .skill-progress {
+        position: relative;
+        width: 110px;
+        height: 110px;}
+}
+@media screen and (min-width: 1100px) {
+  .skill-progress {
+     position: relative;
+     width: 140px;
+     height: 140px;}
+}
+// @media screen and (min-width: 900px) {
+//   .skills {
+  
+
+//     & .skill-container {
+//         margin: 30px;
+      
+//     }
+//   }
+// }
+// @media screen and (max-width: 315px) 
+// {
+
+//   .skills {
+  
+    
+//     &-technologies {
+     
+//       grid-column: 1/13;
+     
+     
+//       & .skill-container {
+//           margin: 1rem;
+        
+//       }
+//     }
+//   }
+// }
+// @media screen and (min-width: 460px) 
+// {
+
+//     .skill-progress {
+//         position: relative;
+//         width: 110px;
+//         height: 100px;}
+  
+// }

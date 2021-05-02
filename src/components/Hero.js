@@ -51,8 +51,8 @@ function Hero() {
         <h2 className="hero__greeting">Hi! I'm</h2>
         <h2 className="hero__name">Saurav Singh</h2>
         <p>
-          I am a full stack <span>web developer</span> and <span>designer</span>
-          .
+          I am a full stack <span>web developer</span> and <span>designer.</span>
+          
         </p>
         <p className="specialization">
           I specialize in developing, designing and deploying elegant responsive
