@@ -22,9 +22,20 @@ function Projects() {
       <p>Many more in progress..</p>
       <div className="slide-container">
         <Swiper
-          slidesPerView={3}
+          slidesPerView={1}
           // centeredSlides={true}
           spaceBetween={30}
+          breakpoints={{
+            850: {
+              slidesPerView: 2,
+              spaceBetweenSlides: 50,
+            },
+
+            1200: {
+              slidesPerView: 3,
+              spaceBetweenSlides: 30,
+            },
+          }}
           pagination={{
             type: "bullets",
           }}
