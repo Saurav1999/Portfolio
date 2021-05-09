@@ -2,7 +2,6 @@ import React, { useState} from "react";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
 import Loader from "react-loader-spinner";
-import 'react-notifications/lib/notifications.css';
 import notificationsound from '../assets/notification.mp3';
 import sendIcon from "../assets/send.svg";
 import {toast } from 'react-toastify';
