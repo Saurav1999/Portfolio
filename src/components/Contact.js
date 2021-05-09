@@ -2,10 +2,10 @@ import React, { useState} from "react";
 import { init } from "emailjs-com";
 import emailjs from "emailjs-com";
 import Loader from "react-loader-spinner";
-import {NotificationContainer, NotificationManager} from 'react-notifications';
 import 'react-notifications/lib/notifications.css';
 import notificationsound from '../assets/notification.mp3';
 import sendIcon from "../assets/send.svg";
+import {toast } from 'react-toastify';
 
 init("user_NITjmkLgyLOvo8wvCW52i");
 
@@ -110,15 +110,21 @@ function Contact() {
    
 
     if(name.value==="" || email.value==="" || subject.value==="" || message.value==="" ) {
-      // notificationRef.addNotification({ text: 'Some info', isInfo: true });
-      // playNotification();
-      NotificationManager.error('Please fill all the required details.',"Couldn't send your message",2500);
+   
+      toast.error('Please fill all the required details.', {
+        position: toast.POSITION.TOP_CENTER,
+        toastId: "error-sending"
+      })
       setSending(false);
       return
     }
     if(email.error ){
-      // playNotification();
-      NotificationManager.error('Please enter a valid E-mail Id.',"Couldn't send your message",2500);
+
+     
+      toast.error('Please enter a valid E-mail Id.', {
+        position: toast.POSITION.TOP_CENTER,
+        toastId: "error-sending"
+      })
       setSending(false);
       return
     }
@@ -140,8 +146,13 @@ function Contact() {
         setEmail({ value: "", error: "" });
         setSubject({ value: "", error: "" });
         setMessage({ value: "", error: "" });
-        playNotification();
-        NotificationManager.success('Thank you.',"Message sent successfully",2500);
+       
+       
+        toast.success('Message received. Thank you for your interest.', {
+          position: toast.POSITION.TOP_CENTER,
+          toastId: "success-sending",
+          onOpen:() => { playNotification();}
+        })
         setSending(false);
       })
       .catch((err) =>
@@ -151,7 +162,11 @@ function Contact() {
           err
         )
         // playNotification();
-        NotificationManager.error('Something went wrong. Please connect through other medium',"Couldn't send your message",2500);
+     
+        toast.error('Something went wrong. Please connect through other medium.', {
+          position: toast.POSITION.TOP_CENTER,
+          toastId: "error-sending"
+        })
       
     })
   };
@@ -162,7 +177,6 @@ function Contact() {
         <p className="primary-heading" id="contact">CONTACT ME</p>
         <h2>Get In Touch</h2>
         <div className="form-container">
-        <NotificationContainer/>
           <form className="contact__form" autoComplete="off">
             <div className="input-group">
               <input
