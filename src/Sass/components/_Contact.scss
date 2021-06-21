@@ -4,16 +4,16 @@
   margin-top: 25rem;
   //   grid-column: 1/13;
   .contact-content {
-    grid-column: 1/13;
+    grid-column: 2/12;
     & p,
     h2,
     .form-container {
-      grid-column: 2/12;
+      grid-column: 1/13;
     }
     & .form-container {
       display: flex;
       flex-direction: column;
-      padding: 3rem;
+      // padding: 3rem;
       & .contact__form {
         width: 100%;
         display: flex;
@@ -158,15 +158,12 @@
     }
   }
 }
-@media screen and (max-width: 460px) 
-{
-  .contact {
-   
-    .contact-content {
-      grid-column: 1/13;
-    
-      .form-container {
-        grid-column: 1/13;
-      }
-    }}
+
+@media screen and (min-width: 1028px) {
+  .contact{
+  .contact-content {
+    .form-container {
+      grid-column: 1/7;
+    }
+  }}
 }
