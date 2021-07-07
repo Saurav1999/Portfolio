@@ -40,7 +40,7 @@ function Hero() {
             </a>
 
             <button>
-              <a href="https://drive.google.com/file/d/1yZASuaytfxZlOVV4OPaSWqXemqhAY0zO/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1CXTw00c16CQlMbNh859drrd6hnv_a7u6/view?usp=sharing">
                 <img className="icon" src={resume} alt="cv icon"></img>
               </a>
             </button>
