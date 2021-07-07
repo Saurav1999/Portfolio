@@ -66,7 +66,7 @@ function About() {
           </ul>
         </div>
         <div className="download-resume">
-          <a className="btn-yellow" href="https://drive.google.com/file/d/1yZASuaytfxZlOVV4OPaSWqXemqhAY0zO/view?usp=sharing">
+          <a className="btn-yellow" href="https://drive.google.com/file/d/1CXTw00c16CQlMbNh859drrd6hnv_a7u6/view?usp=sharing">
             <div className="img-container"><img className="icon" src={resume} alt="cv icon"></img></div>
             <div className="text-container">Resume</div>
           </a>
