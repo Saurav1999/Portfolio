@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import "./App.scss";
 // import Header from './components/Header'
 import AOS from 'aos';
@@ -35,7 +36,12 @@ AOS.init({
 
 });
 
+
 function App() {
+
+  useEffect(() => {
+    alert("Hello there😃!! Thanks for visiting.This site is currently in progress (Good things take time😛) and best viewed in mobile phone as of now. The contact form is functional, feel free to shoot me a message with suggestions, feedbacks and for hiring.\nNote: The projects displayed currently is not my work and are just fillers while the rest of the site is in progress.")
+  }, [])
   return (
     <div className="App">
         {/* <Header/> */}
