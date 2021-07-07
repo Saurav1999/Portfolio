@@ -59,12 +59,12 @@ function Hero() {
           websites and web applications.
         </p>
       
-          <button className="btn-yellow">
+          <a className="btn-yellow" href="#projects">
             <div className="img-container">
               <img className="icon" src={projectLogo} alt="cv icon"></img>
             </div>
             <div className="text-container"><a href="#projects">See My Work</a></div>
-          </button>
+          </a>
       
         <div className="social-links">
           <div className="social-icon">
