@@ -22,7 +22,7 @@ function Header() {
           <a href="#contact">Contact Me</a>
           
           <button>
-            <a href="https://drive.google.com/file/d/1_a4tu77TeeWz3vrmbVV9IYmxNqtKyGIa/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1_a4tu77TeeWz3vrmbVV9IYmxNqtKyGIa/view?usp=sharing" >
             <img
               className="icon"
               src={resume}
